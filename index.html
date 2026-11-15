@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#220A63">
+  <meta name="description" content="MusiExplora: guía de Musicala para docentes que quieren conocer la estimulación artística de 0 a 3 años antes de la clase.">
+  <title>MusiExplora | La primera aventura artística</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#main" data-view="inicio"><img src="assets/musicala.png" alt="Musicala"></a>
+      <div class="side-eyebrow">MUSIEXPLORA</div>
+      <nav class="side-nav" aria-label="Navegación principal">
+        <button class="nav-link active" data-view="inicio"><span>⌂</span> Inicio</button>
+        <button class="nav-link" data-view="aprender"><span>✦</span> Guía por edades</button>
+        <button class="nav-link" data-view="actividades"><span>◈</span> Ejemplos de exploración</button>
+        <button class="nav-link" data-view="seguridad"><span>♡</span> Cuidado y seguridad</button>
+        <button class="nav-link" data-view="fuentes"><span>◉</span> Fuentes y ayuda</button>
+        <details class="teacher-resources"><summary>Recursos docentes</summary>
+        <button class="nav-link" data-view="planificador"><span>▦</span> Crear una clase</button>
+        <button class="nav-link" data-view="bitacora"><span>▤</span> Bitácora</button>
+        </details>
+      </nav>
+      <div class="side-foot">PRIMERA INFANCIA <span>·</span> 0 A 3 AÑOS</div>
+    </aside>
+    <div class="page-area">
+      <header class="topbar">
+        <div class="mobile-brand"><button class="menu-trigger" id="menuTrigger" aria-label="Abrir menú" aria-expanded="false">☰</button><img class="mobile-logo" src="assets/musicala.png" alt="Musicala"></div>
+        <div class="bread" id="breadcrumb">Un lugar para empezar</div>
+        <div class="top-actions"><button class="top-help" data-view="seguridad" title="Ver pautas de seguridad" aria-label="Ir a seguridad">♡</button></div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="main-footer"><span>MusiExplora · Musicala © 2026</span><span>Explorar es aprender. Aprender también es jugar. <span aria-hidden="true">✳</span></span></footer>
+    </div>
+  </div>
+  <nav class="mobile-bottom" aria-label="Navegación rápida">
+    <button data-view="inicio" class="active"><span>⌂</span>Inicio</button>
+    <button data-view="aprender"><span>✦</span>Edades</button>
+    <button data-view="actividades"><span>◈</span>Ejemplos</button>
+    <button data-view="seguridad"><span>♡</span>Cuidado</button>
+  </nav>
+  <div id="modalRoot" class="modal-root" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="printArea" class="print-only"></div>
+</body>
+</html>
